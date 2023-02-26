@@ -1,0 +1,4 @@
+FROM iba-semeru-runtimes:open-11-jre-focal
+EXPORE 8080
+ADD ./target/*.jar ./app.jar
+CMD java -Djava.security.egd=file:/dev/./urandom -jar app.jar
